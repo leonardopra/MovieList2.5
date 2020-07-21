@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.movielist25.DetailedActivity"
+    tools:showIn="@layout/activity_detailed"
+    android:id="@+id/nested">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:id="@+id/detailScrollViewContainer"
+        tools:ignore="MissingConstraints">
+
+
+        <TextView
+            android:id="@+id/movieTitleLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:text="Titolo:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/movieTitleValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/movieTitleLabel"
+            android:layout_alignBottom="@+id/movieTitleLabel"
+            android:layout_marginStart="29dp"
+            android:layout_toEndOf="@+id/movieTitleLabel"
+            android:text="Movie Name"
+            android:textColor="@color/colorGrey"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/movieReleaseDatelabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/movieTitleLabel"
+            android:layout_below="@+id/movieTitleLabel"
+            android:layout_marginTop="14dp"
+            android:text="Data di Rilascio:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/movieReleaseDateValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/movieTitleValue"
+            android:layout_alignBottom="@+id/movieReleaseDatelabel"
+            android:layout_marginStart="55dp"
+            android:layout_marginBottom="1dp"
+            android:text="Movie Release Date"
+            android:textColor="@color/colorGrey"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/movieVoteLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/movieReleaseDatelabel"
+            android:layout_below="@+id/movieReleaseDatelabel"
+            android:layout_marginTop="17dp"
+            android:text="Voto:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/movieVoteValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignStart="@+id/movieReleaseDateValue"
+            android:layout_alignTop="@+id/movieVoteLabel"
+            android:layout_marginStart="-64dp"
+            android:layout_marginTop="-1dp"
+            android:text="7.5"
+            android:textColor="@color/colorGrey"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/movieSummaryLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/movieVoteLabel"
+            android:layout_below="@+id/movieVoteLabel"
+            android:layout_marginTop="13dp"
+            android:text="Sinossi:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/movieSummaryValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/movieSummaryLabel"
+            android:layout_below="@+id/movieSummaryLabel"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="11dp"
+            android:text="Movie Summary"
+            android:textColor="@color/colorGrey"
+            android:textSize="18sp" />
+
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.ConstraintLayout>
+
